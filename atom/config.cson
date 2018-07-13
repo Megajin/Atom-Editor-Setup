@@ -1,0 +1,108 @@
+"*":
+  "atom-beautify":
+    js:
+      brace_style: "collapse-preserve-inline"
+      default_beautifier: "ESLint Fixer"
+    jsx:
+      brace_style: "collapse-preserve-inline"
+      default_beautifier: "JS Beautify"
+  "atom-ide-ui":
+    "atom-ide-diagnostics-ui":
+      showDiagnosticTraces: true
+    "atom-ide-find-references":
+      defaultLocationForPane: "right"
+    "atom-ide-signature-help":
+      enable: false
+    use:
+      "atom-ide-diagnostics": "always"
+      "atom-ide-diagnostics-ui": "always"
+  "atom-material-ui":
+    colors:
+      abaseColor: "#737373"
+      predefinedColor: "Orange"
+    fonts: {}
+    tabs:
+      compactTabs: true
+    ui:
+      panelContrast: true
+      panelShadows: true
+  "atom-package-deps":
+    ignored: [
+      "linter-jshint"
+      "linter-jscs"
+      "linter-eslint"
+      "prettier-atom"
+      "prettier-atom"
+      "prettier-atom"
+      "prettier-atom"
+      "prettier-atom"
+      "prettier-atom"
+      "prettier-atom"
+      "prettier-atom"
+    ]
+  core:
+    allowPendingPaneItems: false
+    autoHideMenuBar: true
+    closeDeletedFileTabs: true
+    projectHome: "C:\\Projekte\\"
+    restorePreviousWindowsOnStart: "no"
+    telemetryConsent: "no"
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
+    uriHandlerRegistration: "always"
+  editor:
+    fontSize: 12
+  "exception-reporting":
+    userId: "6b660919-1947-4b3b-9588-c466dee84312"
+  fonts:
+    fontFamily: "Roboto Mono Medium"
+  "git-plus":
+    experimental:
+      stageFilesBeta: false
+    general: {}
+    logs: {}
+    remoteInteractions: {}
+    tags:
+      signTags: true
+  "linter-eslint":
+    useGlobalEslint: true
+  "linter-jscs": {}
+  "linter-rust":
+    cargoPath: "C:\\Users\\oezdemir\\.cargo\\bin\\cargo.exe"
+    rustcPath: "C:\\Users\\oezdemir\\.cargo\\bin\\rustc.exe"
+  "linter-ui-default":
+    panelHeight: 98
+    showPanel: true
+  minimap:
+    displayMinimapOnLeft: true
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  "prettier-atom":
+    prettierEslintOptions: {}
+    prettierOptions:
+      jsxBracketSameLine: true
+      singleQuote: true
+    useEslint: true
+  racer:
+    autocompleteBlacklist: ".source.go .comment"
+    cargoHome: ""
+    racerBinPath: "/usr/local/bin/racer"
+    rustSrcPath: "/usr/local/src/rust/src/"
+    show: "New"
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    scrollSyncType: "Vertical + Horizontal"
+  tokamak:
+    cargoBinPath: "C:\\Users\\oezdemir\\.cargo\\bin\\cargo.exe"
+    rustcBinPath: "C:\\Users\\oezdemir\\.cargo\\bin\\rustc.exe"
+    toolBinPath: "C:\\Users\\oezdemir\\.cargo\\bin\\rustup.exe"
+  "tool-bar":
+    visible: false
+  welcome:
+    showOnStartup: false

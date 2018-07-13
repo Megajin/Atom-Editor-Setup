@@ -1,0 +1,61 @@
+{
+  "name": "project-name",
+  "version": "1.0.0",
+  "description": "Kundeportal für Advanced Unibyte",
+  "main": "./src/js/index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/babel-node ./src/js/index.js --presets es2015,stage-3",
+    "doc": "./node_modules/.bin/esdoc",
+    "distributeProd": "./node_modules/.bin/babel-node -e \"require('./build/build.js').distribute();\" --presets es2015,stage-3 optionalparams=opti",
+    "distributeTest": "./node_modules/.bin/babel-node -e \"require('./build/build.js').distribute();\" --presets es2015,stage-3 optionalparams=opti",
+    "watchFiles": "./node_modules/.bin/babel-node -e \"require('./build/build.js').watchFiles();\" --presets es2015,stage-3",
+    "build": "./node_modules/.bin/babel-node -e \"require('./build/build.js').build();\" --presets es2015,stage-3",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://svaurtdev:7990/scm/kun/project-name.git"
+  },
+  "keywords": [
+    "kunden",
+    "portal"
+  ],
+  "author": "Güney Özdemir, Jonas Kübler",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.1.0",
+    "del": "^3.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-react-native": "^2.0.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react-native": "^3.2.1",
+    "glob": "^7.1.2",
+    "node-sass": "^4.7.2",
+    "postcss": "^6.0.20",
+    "uglify-es": "^3.3.8",
+    "uglifycss": "0.0.28",
+    "webpack": "^4.1.0"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "body-parser": "^1.18.2",
+    "chalk": "^2.3.2",
+    "connect-flash": "^0.1.1",
+    "esdoc": "^1.0.4",
+    "esdoc-ecmascript-proposal-plugin": "^1.0.0",
+    "esdoc-standard-plugin": "^1.0.0",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "helmet": "^3.12.0",
+    "moment": "^2.21.0",
+    "mssql": "^4.1.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}

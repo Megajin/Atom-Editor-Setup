@@ -1,7 +1,7 @@
 {
   "name": "project-name",
   "version": "1.0.0",
-  "description": "Kundeportal für Advanced Unibyte",
+  "description": "Name",
   "main": "./src/js/index.js",
   "scripts": {
     "start": "./node_modules/.bin/babel-node ./src/js/index.js --presets es2015,stage-3",

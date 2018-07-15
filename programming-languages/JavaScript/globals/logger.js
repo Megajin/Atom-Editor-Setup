@@ -1,6 +1,6 @@
 /****************************************************
 * Logger.                                           *
-* Enablge Advanced Logging for your Application.    *
+* Enable Advanced Logging for your Application.    *
 ****************************************************/
 'use strict';
 

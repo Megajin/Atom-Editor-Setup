@@ -62,8 +62,8 @@ class Distribute {
   */
   get pathsToBeDeleted() {
     return [
-      path.resolve(this.projectRootDirPath + '/dist/kundenportal-dist/**/*'),
-      '!' + path.resolve(this.projectRootDirPath + '/dist/kundenportal-dist/'),
+      path.resolve(this.projectRootDirPath + '/dist/project_name-dist/**/*'),
+      '!' + path.resolve(this.projectRootDirPath + '/dist/project_name-dist/'),
     ];
   }
 
@@ -102,7 +102,7 @@ class Distribute {
         Logger.log(this.constructor.name + '.' + this.main.name, 'starting...');
 
         await ClearDirectories.init(this.pathsToBeDeleted).catch(err => Logger.logInfo(err.funcName, err.message, err.optInfo));
-        await CopyFiles.init(this.filesToBeCopied, this.projectRootDirPath + '/dist/kundenportal-dist', true).catch(err => Logger.logInfo(err.funcName, err.message, err.optInfo));
+        await CopyFiles.init(this.filesToBeCopied, this.projectRootDirPath + '/dist/project_name-dist', true).catch(err => Logger.logInfo(err.funcName, err.message, err.optInfo));
 
         // Log success.
         Logger.logSuccess(this.constructor.name + '.' + this.main.name, 'started', 'done!');

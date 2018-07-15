@@ -1,29 +1,39 @@
 {
   "source": "./",
   "destination": "./docs",
-  "excludes": ["(docs|node_modules|dist|src/Globals/extern)"],
+  "excludes": ["(docs|node_modules|dist|android|ios|__tests__)"],
   "index": "./readme.md",
   "package": "./package.json",
-  "plugins": [
-    {
+  "plugins": [{
       "name": "esdoc-standard-plugin",
       "option": {
         "dynamicImport": true,
-        "lint": {"enable": true},
-        "coverage": {"enable": true},
+        "lint": {
+          "enable": true
+        },
+        "coverage": {
+          "enable": true
+        },
         "accessor": {
           "access": ["public", "protected", "private"],
           "autoPrivate": true
         },
-        "undocumentIdentifier": {"enable": true},
-        "unexportedIdentifier": {"enable": false},
-        "typeInference": {"enable": true},
+        "undocumentIdentifier": {
+          "enable": true
+        },
+        "unexportedIdentifier": {
+          "enable": false
+        },
+        "typeInference": {
+          "enable": true
+        },
         "brand": {
-          "title": "Desc",
-          "description": "Desc",
-          "repository": "http://repo",
+          "title": "project_name",
+          "description": "Business Helper App!",
+          "repository": "https://github.com/project_name",
           "site": "#",
-          "author": ["https://github.com/Megajin"]
+          "author": ["https://github.com/Megajin"],
+          "image": "./logo.svg"
         }
       }
     },
@@ -39,6 +49,12 @@
         "decorators": true,
         "exportExtensions": true,
         "dynamicImport": true
+      }
+    },
+    {
+      "name": "esdoc-jsx-plugin",
+      "option": {
+        "enable": true
       }
     }
   ]

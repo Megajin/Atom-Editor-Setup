@@ -1,0 +1,56 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it here:
+# https://github.com/bevry/cson#what-is-cson
+
+'.source.js':
+  'Public JS Method as Promise Return with Logger':
+    'prefix': 'pubM'
+    'body': '''
+    /**
+    * Description here
+    * @param  {[type]} args [description]
+    * @return {[type]}      [description]
+    */
+    newPublicMethod(args) {
+
+      // Promisify method.
+      return new Promise((resolve, reject) => {
+
+        try {
+
+          // // Feedback.
+          Logger.log(this.constructor.name + '.' + this.newPublicMethod.name, 'starting...');
+
+          // Do stuff!
+
+          // Log success.
+          Logger.logSuccess(this.constructor.name + '.' + this.newPublicMethod.name, 'strated', 'done!');
+
+          // Resolve promise.
+          return resolve();
+
+          } catch (e) {
+            //Logg Error Message.
+            Logger.logError(this.constructor.name + '.' + this.newPublicMethod.name, e);
+            return reject({ funcName: this.constructor.name + '.' + this.newPublicMethod.name, message: 'Promise was', optInfo: 'rejected' });
+          }
+
+          });
+
+        }
+        '''

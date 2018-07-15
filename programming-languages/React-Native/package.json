@@ -1,0 +1,76 @@
+{
+  "name": "project_name",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "devtools": "node_modules/.bin/react-devtools",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "flow": "flow",
+    "android": "node_modules/.bin/react-native run-android",
+    "ios": "node_modules/.bin/react-native run-ios",
+    "log-android": "node_modules/.bin/react-native log-android",
+    "watchFiles": "./node_modules/.bin/babel-node -e \"require('./__build/build.js').watchFiles();\" --presets env",
+    "regenAndroidIOSAndLink": "node_modules/.bin/react-native upgrade",
+    "link": "node_modules/.bin/react-native link",
+    "doc": "./node_modules/.bin/esdoc",
+    "test": "node node_modules/jest/bin/jest.js --watch"
+  },
+  "rnpm": {
+    "assets": [
+      "./src/view/assets/fonts/roboto/",
+      "./src/view/assets/fonts/fontawesome/"
+    ]
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "dependencies": {
+    "amazon-cognito-identity-js": "^2.0.0",
+    "aws-amplify": "^0.4.1",
+    "aws-amplify-react-native": "^0.2.9",
+    "aws-sdk": "2.244.1",
+    "buffer": "^5.0.7",
+    "mime-type": "^3.0.5",
+    "moment": "^2.22.0",
+    "native-base": "^2.4.4",
+    "path": "^0.12.7",
+    "prop-types": "^15.6.1",
+    "react": "16.3.2",
+    "react-devtools": "^3.2.1",
+    "react-native": "0.55.4",
+    "react-native-animatable": "^1.2.4",
+    "react-native-check-box": "^2.1.0",
+    "react-native-fetch-blob": "^0.10.8",
+    "react-native-firebase": "^4.0.7",
+    "react-native-prompt": "^1.0.0",
+    "react-native-uuid": "^1.4.9",
+    "react-native-vector-icons": "^4.6.0",
+    "react-navigation": "^2.0.1",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "22.4.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-native": "4.0.0",
+    "esdoc": "^1.1.0",
+    "esdoc-ecmascript-proposal-plugin": "^1.0.0",
+    "esdoc-jsx-plugin": "^1.0.0",
+    "esdoc-standard-plugin": "^1.0.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-react-native": "^2.0.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react-native": "^3.2.1",
+    "flow-bin": "^0.72.0",
+    "jest": "22.4.4",
+    "react-native-cli": "^2.0.1",
+    "react-test-renderer": "16.3.2"
+  }
+}

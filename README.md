@@ -28,3 +28,8 @@ to install them.
 
 You can find my package-list in the atom folder or if I have done it
 for the specific programming language. I usally do alot of stuff in JavaScript so my main atom folder will hold the JavaScript stuff too.
+
+On Windows you can find the atom folder at:
+`C:\Users\{username}\.atom`
+
+hint: Press `windowsbutton + r` type `.atom` and press enter.

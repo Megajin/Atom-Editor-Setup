@@ -11,8 +11,7 @@
       showDiagnosticTraces: true
     "atom-ide-find-references":
       defaultLocationForPane: "right"
-    "atom-ide-signature-help":
-      enable: false
+    "atom-ide-signature-help": {}
     use:
       "atom-ide-diagnostics": "always"
       "atom-ide-diagnostics-ui": "always"
@@ -44,6 +43,9 @@
     allowPendingPaneItems: false
     autoHideMenuBar: true
     closeDeletedFileTabs: true
+    disabledPackages: [
+      "pigments"
+    ]
     projectHome: "C:\\Projekte\\"
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
@@ -53,7 +55,9 @@
     ]
     uriHandlerRegistration: "always"
   editor:
-    fontSize: 12
+    fontFamily: "Fira Code"
+    fontSize: 13
+    showIndentGuide: true
   "exception-reporting":
     userId: "6b660919-1947-4b3b-9588-c466dee84312"
   fonts:
@@ -66,8 +70,7 @@
     remoteInteractions: {}
     tags:
       signTags: true
-  "linter-eslint":
-    useGlobalEslint: true
+  "linter-eslint": {}
   "linter-jscs": {}
   "linter-rust":
     cargoPath: "C:\\Users\\oezdemir\\.cargo\\bin\\cargo.exe"

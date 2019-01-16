@@ -1,15 +1,37 @@
 {
   "extends": ["airbnb", "eslint:recommended"],
+  "globals": {
+    "document": true,
+    "fetch": true,
+    "window": true
+  },
   "rules": {
-    "linebreak-style": ["error", "windows"],
-    "padded-blocks": ["error", "always"],
+    "accessor-pairs": [
+      "error",
+      {
+        "setWithoutGet": true
+      }
+    ],
     "camelcase": [
       "error",
       {
         "properties": "always"
       }
     ],
+    "class-methods-use-this": "off",
+    "complexity": "off",
+    "consistent-return": "warn",
+    "curly": ["error", "multi"],
+    "default-case": "error",
+    "dot-notation": [
+      "warn",
+      {
+        "allowPattern": "^[a-z]+(_[a-z]+)+$|^[a-z]+(-[a-z]+)+$"
+      }
+    ],
     "eqeqeq": ["error", "smart"],
+    "import/extensions": "off",
+    "import/prefer-default-export": "off",
     "indent": [
       "error",
       2,
@@ -19,44 +41,38 @@
     ],
     "max-len": ["error", 250],
     "new-cap": "error",
-    "no-undef": "error",
-    "no-var": "error",
-    "quotes": ["error", "single", { "allowTemplateLiterals": true }],
-    "no-unused-vars": "error",
+    "no-console": "off",
+    "no-extra-semi": "error",
     "no-loop-func": "warn",
-    "object-curly-spacing": ["error", "always"],
-    "object-curly-newline": [
+    "no-restricted-syntax": "off",
+    "no-undef": "error",
+    "no-underscore-dangle": "off",
+    "no-unused-vars": "error",
+    "padded-blocks": [
       "error",
       {
-        "ObjectExpression": "always",
-        "ObjectPattern": { "multiline": true, "minProperties": 2 }
+        "classes": "always"
       }
     ],
     "padding-line-between-statements": [
       "error",
-      {
-        "blankLine": "always",
-        "prev": ["const", "let", "var"],
-        "next": "*"
-      },
-      {
-        "blankLine": "any",
-        "prev": ["const", "let", "var"],
-        "next": ["const", "let", "var"]
-      }
+      { "blankLine": "always", "prev": "*", "next": ["return", "try"] },
+      { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*" },
+      { "blankLine": "any", "prev": ["const", "let", "var"], "next": ["const", "let", "var"] }
     ],
-    "accessor-pairs": [
+    "prefer-const": "off",
+    "prefer-spread": "error",
+    "prefer-template": "off",
+    "quotes": [
       "error",
+      "single",
       {
-        "setWithoutGet": true
+        "allowTemplateLiterals": true
       }
     ],
-    "dot-notation": [
-      "error",
-      {
-        "allowPattern": "^[a-z]+(_[a-z]+)+$|^[a-z]+(-[a-z]+)+$"
-      }
-    ],
+    "react/forbid-prop-types": "off",
+    "react/jsx-filename-extension": "off",
+    "react/prefer-stateless-function": "off",
     "semi": [
       "error",
       "always",
@@ -65,22 +81,7 @@
       }
     ],
     "semi-style": ["error", "last"],
-    "consistent-return": "error",
-    "default-case": "error",
-    "prefer-spread": "error",
-    "no-extra-semi": "error",
-    "import/prefer-default-export": "off",
-    "import/extensions": "off",
-    "class-methods-use-this": "off",
-    "no-underscore-dangle": "off",
-    "complexity": "off",
-    "prefer-template": "off",
     "spaced-comment": "off",
-    "no-console": "off",
-    "lines-around-directive": "off",
-    "prefer-const": "off",
-    "no-restricted-syntax": "off",
-    "strict": "off",
-    "curly": "off"
+    "strict": "off"
   }
 }

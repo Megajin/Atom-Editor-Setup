@@ -1,35 +1,15 @@
 {
-  "plugins": [
-    "react",
-    "react-native",
-    "jsx-a11y"
-  ],
-  "extends": [
-    "airbnb",
-    "eslint:recommended",
-    "plugin:jsx-a11y/recommended",
-    "plugin:react/recommended",
-    "plugin:react-native/all"
-  ],
+  "extends": ["airbnb", "eslint:recommended"],
   "globals": {
-    "___approot": false
-  },
-  "ecmaFeatures": {
-    "jsx": true
+    "document": true,
+    "fetch": true,
+    "window": true
   },
   "rules": {
-    "react-native/no-unused-styles": 2,
-    "react-native/split-platform-components": 2,
-    "react-native/no-inline-styles": 2,
-    "react-native/no-color-literals": 2,
-    "linebreak-style": [
-      "error",
-      "windows"
-    ],
-    "padded-blocks": [
+    "accessor-pairs": [
       "error",
       {
-        "classes": "always"
+        "setWithoutGet": true
       }
     ],
     "camelcase": [
@@ -38,47 +18,62 @@
         "properties": "always"
       }
     ],
-    "eqeqeq": [
-      "error",
-      "smart"
+    "class-methods-use-this": "off",
+    "complexity": "off",
+    "consistent-return": "warn",
+    "curly": ["error", "multi-line"],
+    "default-case": "error",
+    "dot-notation": [
+      "warn",
+      {
+        "allowPattern": "^[a-z]+(_[a-z]+)+$|^[a-z]+(-[a-z]+)+$"
+      }
     ],
+    "eqeqeq": ["error", "smart"],
+    "import/extensions": "off",
+    "import/prefer-default-export": "off",
     "indent": [
       "error",
       2,
       {
         "MemberExpression": 0,
-        "SwitchCase": 1
+        "ignoredNodes": ["JSXElement"]
       }
     ],
-    "max-len": [
-      "error",
-      250
-    ],
+    "max-len": ["error", 250],
     "new-cap": "error",
-    "no-undef": [
+    "no-console": "off",
+    "no-extra-semi": "error",
+    "no-loop-func": "warn",
+    "no-restricted-syntax": "off",
+    "no-undef": "error",
+    "no-underscore-dangle": "off",
+    "no-unused-vars": "error",
+    "padded-blocks": [
       "error",
       {
-        "typeof": true
+        "classes": "always"
       }
     ],
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": ["return", "try"] },
+      { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*" },
+      { "blankLine": "any", "prev": ["const", "let", "var"], "next": ["const", "let", "var"] }
+    ],
+    "prefer-const": "off",
+    "prefer-spread": "error",
+    "prefer-template": "off",
     "quotes": [
       "error",
-      "single"
-    ],
-    "no-unused-vars": "error",
-    "no-loop-func": "warn",
-    "accessor-pairs": [
-      "error",
+      "single",
       {
-        "setWithoutGet": true
+        "allowTemplateLiterals": true
       }
     ],
-    "dot-notation": [
-      "error",
-      {
-        "allowPattern": "^[a-z]+(_[a-z]+)+$|^[a-z]+(-[a-z]+)+$"
-      }
-    ],
+    "react/forbid-prop-types": "off",
+    "react/jsx-filename-extension": "off",
+    "react/prefer-stateless-function": "off",
     "semi": [
       "error",
       "always",
@@ -86,40 +81,8 @@
         "omitLastInOneLineBlock": true
       }
     ],
-    "semi-style": [
-      "error",
-      "last"
-    ],
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": true,
-        "optionalDependencies": false,
-        "peerDependencies": false
-      }
-    ],
-    "default-case": "error",
-    "prefer-spread": "error",
-    "no-extra-semi": "error",
-    "consistent-return": "off",
-    "react/jsx-filename-extension": "off",
-    "react/prefer-stateless-function": "off",
-    "react/forbid-prop-types": "off",
-    "react/prop-types": "off",
-    "jsx-a11y/click-events-have-key-events": "off",
-    "jsx-a11y/no-noninteractive-element-interactions": "off",
-    "import/prefer-default-export": "off",
-    "import/extensions": "off",
-    "class-methods-use-this": "off",
-    "no-underscore-dangle": "off",
-    "complexity": "off",
-    "prefer-template": "off",
+    "semi-style": ["error", "last"],
     "spaced-comment": "off",
-    "no-console": "off",
-    "lines-around-directive": "off",
-    "prefer-const": "off",
-    "no-restricted-syntax": "off",
-    "strict": "off",
-    "curly": "off"
+    "strict": "off"
   }
 }

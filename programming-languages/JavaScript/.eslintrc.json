@@ -21,7 +21,7 @@
     "class-methods-use-this": "off",
     "complexity": "off",
     "consistent-return": "warn",
-    "curly": ["error", "multi"],
+    "curly": ["error", "multi-line"],
     "default-case": "error",
     "dot-notation": [
       "warn",
@@ -36,7 +36,8 @@
       "error",
       2,
       {
-        "MemberExpression": 0
+        "MemberExpression": 0,
+        "ignoredNodes": ["JSXElement"]
       }
     ],
     "max-len": ["error", 250],
